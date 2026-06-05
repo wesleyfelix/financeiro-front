@@ -5,12 +5,12 @@
   >
     <q-header elevated>
       <q-toolbar>
-        <q-avatar
+        <a
             class="cursor-pointer"
             @click="irParaHome"
         >
-          <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-        </q-avatar>
+          <img src="https://www.globalti.com.br/img/logos-gti/GTIlogowy.png" />
+        </a>
         <q-toolbar-title>
           Agendamentos de transferências
         </q-toolbar-title>
