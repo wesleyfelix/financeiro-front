@@ -1,20 +1,20 @@
-import HttpClient from './HttpClient';
+import HttpClient from './httpClient';
 
-class UserService {
+class FinanceiroService {
     constructor() {
         this.http = new HttpClient({
             baseURL: process.env.VUE_APP_FINANCEIRO_API_URL,
         });
     }
 
-    getUsers(params = {}) {
+    getTransferencias(params = {}) {
         return this.http.get('/transferencias', { params });
     }
 
-    createUser(data) {
+    createTransferencia(data) {
         return this.http.post('/transferencias', data);
     }
 
 }
 
-export default new UserService();
+export default new FinanceiroService();

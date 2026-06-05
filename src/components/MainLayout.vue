@@ -5,11 +5,14 @@
   >
     <q-header elevated>
       <q-toolbar>
-        <q-avatar>
+        <q-avatar
+            class="cursor-pointer"
+            @click="irParaHome"
+        >
           <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
         </q-avatar>
         <q-toolbar-title>
-          Quasar Framework teste
+          Agendamentos de transferências
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -24,7 +27,7 @@
 export default {
   name: "MainLayout",
   methods: {
-    logout() {
+    irParaHome() {
       this.$router.push('/');
     }
   }
